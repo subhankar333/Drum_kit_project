@@ -32,7 +32,9 @@ const animate = (key)=>{
 //for pressing from keyboard and getting exact keyboard switch
   document.addEventListener("keypress" , (event) =>{
 
-       const triggeredKey = event.key;
+       const triggeredKey = event.key; 
+      
+      init();
        makeSound(triggeredKey);
        animate(triggeredKey);
   })
