@@ -169,32 +169,33 @@ const animate = (key)=>{
     switch(key){
 
          case "w":
-             playMusic("sounds/sound-1.mp3");
+             playMusic("sounds\\sound-1.mp3");
              break;
 
         case "a":
-            playMusic("sounds/sound-2.mp3");
+            playMusic("sounds\\sound-2.mp3");
             break;
 
         case "r":
-             playMusic("sounds/sound-3.mp3");
+             playMusic("sounds\\sound-3.mp3");
              break;
 
          case "s":
-             playMusic("sounds/sound-4.mp3");
+             playMusic("sounds\\sound-4.mp3");
              break;
 
           case "e":
-             playMusic("sounds/sound-5.mp3");
+             playMusic("sounds\\sound-5.mp3");
              break;
 
           case "l":
-             playMusic("sounds/sound-6.mp3");
+             playMusic("sounds\\sound-6.mp3");
              break;
 
           case "m":
-             playMusic("sounds/sound-7.mp3");
+             playMusic("sounds\\sound-7.mp3");
              break;
+
 
              default:
                      console.log("wrong button!");
