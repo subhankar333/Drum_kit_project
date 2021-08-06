@@ -1,0 +1,138 @@
+:root{
+    --background: #091921;
+    --background_low: rgba(9,25,33,0.8);
+    --text:#00fff1;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background: var(--background);
+}
+
+.container{
+
+       padding: 10px;
+       min-height: 90vh;
+       margin: 3vh auto;
+       box-shadow: inset 2px 2px 5px var(--text),inset -2px -2px 5px var(--text);
+       border-radius: 9px;
+
+}
+
+.title{
+
+      margin: 20px ;
+      font-size: 4rem;
+      font-weight: bold;
+      opacity: 0.5;
+      color: var(--text);
+}
+
+.drum{
+
+        width: 150px;
+        height: 150px;
+        background: var(--background);
+        color: var(--text);
+        font-size: 3rem;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        box-shadow: -1px -1px 3px rgba(255,255,255,0.1), 1px 1px 3px rgba(0,0,0,0.8);
+        margin: 10px;
+        border-radius: 12px;
+
+}
+
+.w,.d,.l{
+
+    border-radius: 50%;
+}
+
+.volume__control{
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 19px;
+}
+
+#volume__slider{
+
+           height: 7px;
+           width: 200px;
+           margin-left: 10px;
+           appearance: none;
+           background: var(--text);
+           border-radius: 12px;
+           outline: none;
+}
+
+
+#volume__slider::-webkit-slider-thumb{
+
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background:var(--text);
+    cursor: pointer;
+}
+
+.util__buttons{
+
+      margin-top: 40px;
+}
+
+.sound{
+
+      font-weight: bold;
+      padding: 10px;
+      color: var(--text);
+      margin: 7px;
+      border: var(--text);
+}
+
+.util__buttons>button{
+    height: 50px;
+    width: 200px;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    font-size: 18px;
+    background: var(--background);
+    color: var(--text);
+    box-shadow: -1px -1px 3px rgba(255,255,255,0.1), 1px 1px 3px rgba(0,0,0,0.8);
+    margin: 10px 12px;
+
+}
+
+#util__button-theme{
+
+           color: var(--background);
+           background: var(--text);
+
+}
+
+.pressed{
+
+         opacity: 0.5;
+         box-shadow: -1px -1px 3px var(--background);
+
+}
+
+.auto_music_on,
+.change_theme__pressed
+{
+
+      box-shadow: inset -1px -1px 3px rgba(255,255,255,0.1), inset 1px 1px 3px rgba(0,0,0,0.8) !important;
+}
